@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
         this.speedX = (Math.random() - 0.5) * 0.5;
         this.speedY = (Math.random() - 0.5) * 0.5;
         this.opacity = Math.random() * 0.5 + 0.1;
-        this.color = Math.random() > 0.5 ? '124, 58, 237' : '6, 182, 212';
+        this.color = Math.random() > 0.5 ? '27, 58, 92' : '201, 162, 39';
       }
 
       update() {
@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = `rgba(124, 58, 237, ${opacity})`;
+            ctx.strokeStyle = `rgba(27, 58, 92, ${opacity})`;
             ctx.lineWidth = 0.5;
             ctx.stroke();
           }
@@ -267,7 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const btn = contactForm.querySelector('.btn-primary');
       const origText = btn.innerHTML;
       btn.innerHTML = '✓ Message Sent!';
-      btn.style.background = 'linear-gradient(135deg, #10B981, #06B6D4)';
+      btn.style.background = 'linear-gradient(135deg, #2E8B6E, #1B3A5C)';
       setTimeout(() => {
         btn.innerHTML = origText;
         btn.style.background = '';
